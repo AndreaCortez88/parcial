@@ -6,14 +6,14 @@ from import_export.admin import ImportExportModelAdmin
 # Register your models here.
 
 # -------------------------------------
-class Empleado(resources.Model):
+class ResourceEmpleado(resources.Model):
     class Meta:
         model = Empleado
 
 class AdminEmpleado(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['nombre']
     list_display = ['pk_empleado', 'nombre', 'telefono', 'usuario', 'contraseña']
-    resource_class = Empleado
+    resource_class = ResourceEmpleado
 
 admin.site.register(Empleado, AdminEmpleado)
 
