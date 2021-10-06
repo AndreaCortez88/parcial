@@ -6,7 +6,7 @@ from import_export.admin import ImportExportModelAdmin
 # Register your models here.
 
 # -------------------------------------
-class ResourceEmpleado(resources.Model):
+class ResourceEmpleado(resources.ModelResource):
     class Meta:
         model = Empleado
 
