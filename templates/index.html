@@ -30,17 +30,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
-   {%if allordenador%}
-      {%for arrayordenador in allordenador%}
-         <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
-            <div class="u-container-layout">
-               <img src="{{arrayordenador.imagen1}}" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1">
-               <h4 class="u-text u-text-2">{{arrayordenador.nombre_ordenador}}</h4>
-               <p>{{arrayordenador.num_ordenador}}</p>
-            </div>
-         </div>
-      {%endfor%}
-   {%endif%}
 
    <!-- body -->
    <body class="main-layout">
@@ -136,6 +125,17 @@
             </div>
          </div>
       </div>
+      {%if allordenador%}
+      {%for arrayordenador in allordenador%}
+         <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
+            <div class="u-container-layout">
+               <img src="{{arrayordenador.imagen1}}" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1">
+               <h4 class="u-text u-text-2">{{arrayordenador.nombre_ordenador}}</h4>
+               <p>{{arrayordenador.num_ordenador}}</p>
+            </div>
+         </div>
+      {%endfor%}
+   {%endif%}
       <!-- about -->
       <!-- best -->
       <div id="" class="best">
