@@ -31,4 +31,4 @@ class ordenador(models.Model):
         ordering=['nombre_ordenador']
 
     def __str__(self):
-        return "{0}".format(self.nombre)
+        return "{0}".format(self.nombre_ordenador)
