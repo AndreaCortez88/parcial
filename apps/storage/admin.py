@@ -23,7 +23,7 @@ class Resourceordenador(resources.ModelResource):
 
 class Adminordenador(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['nombre_ordenador']
-    list_display = ['pk_ordenador', 'nombre_ordenador', 'num_ordenador']
+    list_display = ['pk_ordenador', 'nombre_ordenador', 'num_ordenador', 'descripcion']
     resource_class = Resourceordenador
 
 admin.site.register(ordenador, Adminordenador)

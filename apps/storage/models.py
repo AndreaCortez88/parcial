@@ -23,7 +23,7 @@ class ordenador(models.Model):
     nombre_ordenador = models.CharField(max_length=9, null=False, blank=False)
     num_ordenador = models.CharField(max_length=9, null=False, blank=False)
     imagen1 = models.URLField(max_length=800, default='https://i.postimg.cc/Y0gkNhTM/3aabe0e9a520b9ad90407a82f85adb42.jpg', null=False, blank=False)
-
+    descripcion = models.CharField(max_length=500, null=False, blank=False)
 
     class Meta:
         verbose_name='ordenador'
